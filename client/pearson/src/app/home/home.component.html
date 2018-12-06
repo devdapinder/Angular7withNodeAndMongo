@@ -1,0 +1,16 @@
+<h1 [class.gray]="h1style">Home</h1>
+<h1 [ngClass]="{
+'gray':h1style,
+'large':!h1style
+}">Another Class</h1>
+
+<ul *ngIf="users">
+    <li *ngFor="let user of users.data">
+        <img [src]="user.avatar"/>
+        <p>
+            {{ user.first_name }} {{ user.last_name }}
+        </p>
+    </li>
+</ul>
+
+<button (click)="fisrtClick()">Click Me</button>

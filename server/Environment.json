@@ -1,0 +1,6 @@
+{
+    "env": {
+        "DataBase": "mongodb://localhost:27017/nodeRestApi",
+        "password": ""
+    }
+}
